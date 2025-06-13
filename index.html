@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Hub - Dynamic Digital Marketing Solutions</title>
+    <meta name="description" content="Transform your business with cutting-edge digital marketing strategies. Expert design, branding, consultation, and results-driven solutions.">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Marketing Pro Hub - Digital Marketing Excellence">
+    <meta property="og:description" content="Elevate your brand with innovative marketing strategies and creative design solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marketingprohub.com">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="brand-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <span class="brand-text">Marketing Hub</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="btn btn-primary nav-cta" onclick="scrollToSection('contact')">Get Started</button>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-element floating-1"></div>
+            <div class="floating-element floating-2"></div>
+            <div class="floating-element floating-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Transform Your <span class="gradient-text">Digital</span> Marketing
+                    </h1>
+                    <p class="hero-description">
+                        Elevate your brand with cutting-edge strategies, creative design,
+                        and data-driven results. We turn your marketing challenges into
+                        growth opportunities.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-lg" onclick="scrollToSection('contact')">
+                            Start Your Journey
+                        </button>
+                        <button class="btn btn-outline btn-lg">
+                            <i class="fas fa-play"></i>
+                            Watch Demo
+                        </button>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">
+                                <i class="fas fa-users"></i>
+                                500+
+                            </div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">
+                                <i class="fas fa-chart-line"></i>
+                                95%
+                            </div>
+                            <div class="stat-label">Success Rate</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">
+                                <i class="fas fa-clock"></i>
+                                24/7
+                            </div>
+                            <div class="stat-label">Support</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Modern marketing office workspace">
+                    
+                    <div class="floating-card card-1">
+                        <div class="card-number">↗ 125%</div>
+                        <div class="card-label">Growth Rate</div>
+                    </div>
+                    
+                    <div class="floating-card card-2">
+                        <div class="card-indicator"></div>
+                        <div class="card-label">Live Analytics</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span class="gradient-text">Services</span></h2>
+                <p>Comprehensive digital marketing solutions tailored to accelerate your business growth and maximize your online presence.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-gradient="blue">
+                    <div class="service-icon blue-gradient">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Creative Design</h3>
+                    <p>Stunning visual identities and user experiences that captivate your audience and drive engagement across all platforms.</p>
+                </div>
+                
+                <div class="service-card" data-gradient="purple">
+                    <div class="service-icon purple-gradient">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Brand Strategy</h3>
+                    <p>Build powerful brand identities that resonate with your target audience and establish lasting market presence.</p>
+                </div>
+                
+                <div class="service-card" data-gradient="green">
+                    <div class="service-icon green-gradient">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Expert Consultation</h3>
+                    <p>Strategic guidance and actionable insights to optimize your marketing efforts and achieve measurable results.</p>
+                </div>
+                
+                <div class="service-card" data-gradient="orange">
+                    <div class="service-icon orange-gradient">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Data Analytics</h3>
+                    <p>Advanced analytics and reporting to track performance, understand customer behavior, and drive growth.</p>
+                </div>
+            </div>
+            
+            <div class="services-showcase">
+                <div class="showcase-content">
+                    <h3>Why Choose Our Services?</h3>
+                    <div class="features-list">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Proven Results</h4>
+                                <p>Over 500 successful campaigns with measurable ROI improvements averaging 300%.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Expert Team</h4>
+                                <p>Industry professionals with 10+ years experience in digital marketing and design.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>24/7 Support</h4>
+                                <p>Round-the-clock assistance to ensure your campaigns run smoothly and efficiently.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="showcase-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Digital marketing analytics dashboard">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Choose Your <span class="gradient-text">Plan</span></h2>
+                <p>Flexible pricing options designed to scale with your business needs and marketing goals.</p>
+            </div>
+            
+            <div class="pricing-toggle">
+                <div class="toggle-container">
+                    <button class="toggle-btn active" data-period="monthly">Monthly</button>
+                    <button class="toggle-btn" data-period="yearly">Yearly (Save 20%)</button>
+                </div>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Starter</h3>
+                        <p>Perfect for small businesses</p>
+                        <div class="price">
+                            <!-- <span class="currency">₹</span> -->
+                            <span class="amount" data-monthly="₹499" data-yearly="₹399">₹499</span>
+                            <span class="period">per month</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> 5 Social Media Accounts</li>
+                        <li><i class="fas fa-check"></i> Basic Analytics</li>
+                        <li><i class="fas fa-check"></i> Email Support</li>
+                        <li><i class="fas fa-check"></i> Content Calendar</li>
+                    </ul>
+                    
+                    <button class="btn btn-outline btn-full" onclick="scrollToSection('contact')">Get Started</button>
+                </div>
+                
+                <div class="pricing-card popular">
+                    <div class="popular-badge">
+                        <i class="fas fa-star"></i>
+                        Most Popular
+                    </div>
+                    <div class="card-header">
+                        <h3>Professional</h3>
+                        <p>For growing businesses</p>
+                        <div class="price">
+                            <!-- <span class="currency">₹</span> -->
+                            <span class="amount" data-monthly="₹999" data-yearly="₹799">₹999</span>
+                            <span class="period">per month</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> 15 Social Media Accounts</li>
+                        <li><i class="fas fa-check"></i> Advanced Analytics</li>
+                        <li><i class="fas fa-check"></i> Priority Support</li>
+                        <li><i class="fas fa-check"></i> Custom Branding</li>
+                        <li><i class="fas fa-check"></i> A/B Testing</li>
+                    </ul>
+                    
+                    <button class="btn btn-primary btn-full" onclick="scrollToSection('contact')">Get Started</button>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Enterprise</h3>
+                        <p>For large organizations</p>
+                        <div class="price">
+                            <!-- <span class="currency">₹</span> -->
+                            <span class="amount" data-monthly="₹2999" data-yearly="₹2499">₹2999</span>
+                            <span class="period">per month</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Unlimited Accounts</li>
+                        <li><i class="fas fa-check"></i> Enterprise Analytics</li>
+                        <li><i class="fas fa-check"></i> Dedicated Manager</li>
+                        <li><i class="fas fa-check"></i> Custom Integrations</li>
+                        <li><i class="fas fa-check"></i> White-label Solution</li>
+                    </ul>
+                    
+                    <button class="btn btn-outline btn-full" onclick="scrollToSection('contact')">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet Our <span class="gradient-text">Team</span></h2>
+                <p>Passionate experts dedicated to transforming your digital marketing success through innovation and creativity.</p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-card" data-gradient="blue">
+                    <div class="member-image">
+                        <img src="ABHINANDAN.jpg" alt="Abhinandan">
+                    </div>
+                    <h3>Abhinandan Shakya</h3>
+                    <p class="role">CEO & Founder</p>
+                    <p class="description">Visionary leader with 2 years in digital marketing, driving innovation and strategic growth for global brands.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/abhinandan-shakya/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/Abhinandan_200"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/abhi_shakya_2.0/?__pwa=1"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="team-card" data-gradient="purple">
+                    <div class="member-image">
+                        <img src="ABHINANDAN.jpg" alt="Abhinandan">
+                    </div>
+                    <h3>Abhinandan Shakya</h3>
+                    <p class="role">Creative Director</p>
+                    <p class="description">Award-winning creative professional specializing in brand identity and compelling visual storytelling.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/abhinandan-shakya/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/Abhinandan_200"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/abhi_shakya_2.0/?__pwa=1"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="team-card" data-gradient="green">
+                    <div class="member-image">
+                        <img src="ABHINANDAN.jpg" alt="Abhinandan"">
+                    </div>
+                    <h3>Abhinandan Shakya</h3>
+                    <p class="role">Marketing Strategist</p>
+                    <p class="description">Data-driven strategist who transforms insights into high-performing campaigns and measurable business growth.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/abhinandan-shakya/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/Abhinandan_200"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/abhi_shakya_2.0/?__pwa=1"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Let's Start Your <span class="gradient-text">Success Story</span></h2>
+                    <p>Ready to transform your digital marketing? Get in touch with our experts and discover how we can accelerate your business growth.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon email">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>Email Us</h4>
+                                <p>abhinandanshakya171@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon phone">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>Call Us</h4>
+                                <p>+91 9026611627</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon location">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>Visit Us</h4>
+                                <p>Namdev colony,sanganer thana<br>Jaipur, Rajasthan</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-image">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" alt="Creative team collaboration workspace">
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <div class="form-card">
+                        <div id="success-message" class="success-message" style="display: none;">
+                            <div class="success-content">
+                                <i class="fas fa-check-circle"></i>
+                                <h3>Thank you for your message!</h3>
+                                <p>We'll get back to you within 24 hours.</p>
+                            </div>
+                        </div>
+                        
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="How can we help?" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full btn-lg">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loading" style="display: none;">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                    Sending...
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section company">
+                    <div class="footer-brand">
+                        <div class="brand-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <span class="brand-text">Marketing Hub</span>
+                    </div>
+                    <p>Transforming businesses through innovative digital marketing strategies and creative excellence.</p>
+                    <div class="social-links">
+                        <a href="https://x.com/Mersal7062?t=vMuVtyNh5sSN00oNOZfUnQ&s=09"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/aayu__58/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Brand Strategy</a></li>
+                        <li><a href="#">Creative Design</a></li>
+                        <li><a href="#">Social Media</a></li>
+                        <li><a href="#">SEO & Analytics</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for the latest marketing insights.</p>
+                    <form id="newsletter-form" class="newsletter-form">
+                        <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="btn-text">Subscribe</span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 Abhinandan Shakya. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
